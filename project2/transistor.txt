@@ -1,0 +1,19 @@
+Current in Coil = 12V/400ohm = 30mA  and arduino can handle 20mA max so use transistor(NPN BC547B):- 
+
+NPN Transistor BC547B:-
+
+Max Values:-
+
+Vceo(collect emitter voltage) = 45 Vdc
+Ic = 100 mAdc
+hFE(forwad current transfer ratio, Ic=100mA, Vce=5.0V) = 180
+
+Calculating R1:-
+
+First, Ib= Ic/hFE
+	 = 0.03/180
+	 = 0.16mA
+
+R1 = V/Ib
+   = 5/0.16
+   = 31.25K
